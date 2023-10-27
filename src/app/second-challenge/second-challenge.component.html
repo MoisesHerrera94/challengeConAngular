@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col mt-5">
+            <igx-grid [data]="data" [allowFiltering]="true" [filterMode]="'excelStyleFilter'">
+                <igx-column field="nombre" header="Nombre y Apellido" dataType="string"></igx-column>
+                <igx-column field="edad" header="Edad" dataType="number"></igx-column>
+                <igx-column field="email" header="Email" dataType="string"></igx-column>
+                <igx-column field="provincia" header="Provincia" dataType="string"></igx-column>
+            </igx-grid>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col d-flex justify-content-center" routerLink="">
+            <button class="btn btn-primary btn-lg" style="width: 120px;">
+                Volver
+            </button>
+        </div>
+    </div>
+</div>
+
